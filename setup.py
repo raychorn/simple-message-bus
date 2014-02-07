@@ -4,13 +4,15 @@ __target__ = r'C:\@vm2\simple-message-bus'
 
 minion = setup.CopyFilesToTarget(__target__,isZIP=True)
 
+#callback=minion.callback,
+
 setup.do_setup(
     program_name='simple-message-bus',
     company_name='VyperLogix Corp.',
     product_name='VyperLogix Simple Message Bus Demo',
     description='VyperLogix Simple Message Bus Demo',
     product_version='1.0.0.0',
-    callback=minion.callback,
+    minion=minion,
     icon='VyperLogixCorp.ico',
     dist_dir='./dist',
     packages=[],

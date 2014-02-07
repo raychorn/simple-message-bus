@@ -1,6 +1,4 @@
-Version 1.0.0.0
-
-Simple Message Bus
+{{ product_name }} Version {{ product_version }}
 
 This is a very simplistic view of a minimalistic message bus that transmits information from one process to another
 through the Windows filesystem.
